@@ -1,0 +1,13 @@
+Here's a refined version of your text for the README file:
+
+---
+
+### Memento Pattern and SOLID Principles
+
+The Memento pattern addresses issues related to coupling and composition that can compromise the Single Responsibility Principle (SRP) of SOLID. Without the Memento pattern, if we remove the `History` class, the `Editor` class would be responsible for maintaining history. This would involve adding code like `List<EditorState> states = new ArrayList<>()` directly in the `Editor` class, thus violating SRP by forcing the `Editor` class to handle both editing and history maintenance.
+
+In the context of the Memento pattern, we introduce a `History` class to manage the state history. With this pattern, the `List<EditorState> states = new ArrayList<>()` code resides within the `History` class. Consequently, the `History` and `EditorState` classes maintain a composition relationship. This approach preserves SRP because the `History` class is solely responsible for managing history, while the `Editor` class focuses exclusively on editing.
+
+---
+
+Feel free to adjust the wording as needed!
