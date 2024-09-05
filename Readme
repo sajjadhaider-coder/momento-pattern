@@ -9,5 +9,5 @@ The Memento pattern addresses issues related to coupling and composition that ca
 In the context of the Memento pattern, we introduce a `History` class to manage the state history. With this pattern, the `List<EditorState> states = new ArrayList<>()` code resides within the `History` class. Consequently, the `History` and `EditorState` classes maintain a composition relationship. This approach preserves SRP because the `History` class is solely responsible for managing history, while the `Editor` class focuses exclusively on editing.
 
 ---
-
-Feel free to adjust the wording as needed!
+Link on Youtube that I followed to learn this pattern:
+https://www.youtube.com/watch?v=NU_1StN5Tkk
